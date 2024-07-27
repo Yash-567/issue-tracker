@@ -19,7 +19,7 @@ export const NavBar = () => {
             </Link>
             <ul className='flex space-x-6'>
                 {links.map(link=>
-                <li>
+                <li key={link.href}>
                     <Link 
                     href={link.href} 
                     className={classnames({
